@@ -11,7 +11,11 @@
 body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
+
   font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 /* цвет основного текста  #212121 */
@@ -34,6 +38,7 @@ a.logo {
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
+  text-decoration: none;
 }
 
 .logo-header {
@@ -55,6 +60,7 @@ a.logo {
   font-size: 14px;
   line-height: 1.14;
   color: var(--accent-color);
+  text-decoration: none;
 }
 
 .site-nav .link:hover,
@@ -81,21 +87,28 @@ a.logo {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  text-align: center;
   color: var(--title-text-color);
 }
 
-/* section */
+/* work */
 
-.section-title {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
+.work-title {
+  font-weight: 700;
   font-size: 36px;
-  line-height: 1.16;
+  line-height: 1.17;
+  text-align: center;
   color: var(--title-text-color);
 }
 
-/* advantages */
+/* features */
+
+.features-list .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--title-text-color);
+}
 
 /* button */
 .but {
@@ -105,7 +118,6 @@ a.logo {
 }
 
 .button {
-
   color: var(--accent-color);
 }
 
