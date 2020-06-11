@@ -1,3 +1,18 @@
+/* всегда определяем для проекта */
+html {
+  box-sizing: border-box;
+}
+
+/* ставим, чтобы в старых версиях, где не прописан border-box, наследовались свойства ближайшего родителя */
+
+*,
+*:: before,
+*:: after {
+  box-sizing: inherit;
+}
+
+
+
 :root {
   --primary-text-color: #212121;
   --title-text-color: #212121;
@@ -9,6 +24,7 @@
 }
 
 body {
+  margin: 0;
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
 
@@ -24,6 +40,62 @@ body {
 /* акцент #2196F3 */
 /* основной цвет фона #E5E5E5 */
 /* вторичный цвет фона #F5F4FA */
+
+
+/* обучающий материал */
+
+/* стилизация кнопки ссылка кнопка  */
+.btn {
+  display: inline-block;
+  border: 2px solid black;
+  border-radius: 3px;
+  padding: 20px 40px;
+  background-color: tomato;
+  color: white;
+  text-decoration: none;
+}
+
+.btn :hover,
+.btn :focus {
+  background-color: black;
+  color: #ffffff;
+  background-color: tomato;
+}
+
+.btn-icon {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-color: skyblue;
+  vertical-align: bottom;
+}
+
+
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 1440px;
+  outline-color: tomato;
+
+}
+
+/* делаем контейнер для центрирования */
+/* .container { */
+width: 1230px;
+padding-left: 15px;
+padding-right: 15px;
+/* margin-left: auto; 
+   margin-right: auto; */
+margin: 0 auto;
+
+}
+
+/* .box { 
+  background-color: tomato;
+  outline: 2px solid  tomato;
+ } */
 
 ul {
   list-style: none;
@@ -48,6 +120,13 @@ a.logo {
 .logo:hover {
   color: var(--accent-color);
 }
+
+/* page header */
+.page-header {
+  background-color: #cccccc;
+}
+
+
 
 .button {
   font-family: inherit;
@@ -118,6 +197,7 @@ a.logo {
 }
 
 .button {
+
   color: var(--accent-color);
 }
 
