@@ -80,11 +80,12 @@ body {
 }
 
 .container-img {
-  align-items: flex-end;
+  display: flex;
+  margin-left: auto;
 }
 .container-nav {
   margin-left: 85px;
-  margin-top: 32px;
+  /* margin-top: 32px; */
   margin-bottom: 0;
 }
 
@@ -121,7 +122,6 @@ a.logo {
 .page-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .button {
@@ -135,14 +135,15 @@ a.logo {
   display: block;
   margin-left: 0px;
   align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
   font-weight: 500;
   font-size: 14px;
   padding-left: 0px;
   line-height: 1.14;
   color: var(--accent-color);
   text-decoration: none;
-  padding-top: 30px;
-  padding-bottom: 30px;
 }
 
 .site-nav .link:hover,
@@ -174,6 +175,10 @@ a.logo {
   font-size: 14px;
   line-height: 1.14;
   color: var(--title-text-color);
+}
+
+.container-img .item-li + .item-li {
+  margin-left: 30px;
 }
 
 /* hero */
@@ -208,6 +213,17 @@ a.logo {
 }
 
 /* advantages */
+.advantages-list {
+  display: flex;
+}
+.item {
+  width: 270px;
+  background-color: tomato;
+  margin-right: 30px;
+}
+.item:nth-last-child() {
+  margin-right: 0;
+}
 
 .advantages-list.title {
   margin-top: 0;
@@ -234,23 +250,22 @@ a.logo {
 
 /* button */
 
-.button-round {
-  display: inline-block;
-  padding: 16px;
-  background-color: var(--accent-color);
-  color: white;
-  font-weight: bold;
-  margin: 50px;
-  border-radius: 50%;
-}
-.button-round :hover,
-.button-round :focus {
-  background-color: navy;
-}
 .but {
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-top: 30px;
+  font-weight: bold;
   color: var(--primary-white-color);
+  color: white;
   background-color: var(--accent-color);
   border-radius: 4px;
+}
+.but :hover,
+.but :focus {
+  background-color: navy;
 }
 
 .button {
@@ -284,10 +299,6 @@ a.logo {
 
 a {
   text-decoration: none;
-}
-
-.item {
-  display: none;
 }
 
 h2 {
