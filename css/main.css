@@ -67,7 +67,7 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -78,7 +78,6 @@ body {
   list-style: none;
   margin: 0;
 }
-
 .container-img {
   display: flex;
   margin-left: auto;
@@ -122,10 +121,13 @@ a.logo {
 .page-header {
   display: flex;
   align-items: center;
+  padding-bottom: 94px;
 }
 
 .button {
   font-family: inherit;
+}
+.button-style {
 }
 
 /* site nav */
@@ -150,16 +152,9 @@ a.logo {
 .site-nav .link:focus {
   color: var(--title-text-color);
 }
-/* .site-nav .item-li:last-child { 
-  margin-right: 0;
-} */
-
 .site-nav .item-li + .item-li {
   margin-left: 50px;
 }
-/* .site-nav.item-li :not(:last-child) { 
-  margin-right: 50px;
-} */
 
 .site-nav .link.current {
   color: var(--accent-color);
@@ -184,7 +179,7 @@ a.logo {
 /* hero */
 
 .hero {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
   text-align: center;
 }
 .hero-title {
@@ -196,7 +191,8 @@ a.logo {
 
 /* section */
 .section {
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .section-title {
@@ -204,7 +200,9 @@ a.logo {
   font-size: 36px;
   line-height: 1.17;
   color: var(--title-text-color);
-  margin-bottom: 50px;
+  padding-bottom: 50px;
+  padding-top: 94px;
+  margin: 0;
 }
 .section-title.centered {
   text-align: center;
@@ -247,8 +245,21 @@ a.logo {
 }
 
 /* page portfolio */
-.filters {
+
+.visually-hidden {
+  visibility: hidden;
+}
+
+/* filter works */
+
+.container-filter {
+  display: flex;
+  margin-top: 0;
   margin-bottom: 34px;
+  padding-left: 0;
+  margin-left: 495px;
+  margin-right: 495px;
+  width: 611px;
 }
 
 .works-list {
@@ -292,10 +303,16 @@ a.logo {
 }
 
 .button-style {
+  display: inline-block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   color: var(--primary-text-color);
+  margin-right: 8px;
+  text-align: center;
+}
+.button-style:last-child {
+  margin-right: 0;
 }
 
 .button-style :hover,
@@ -330,6 +347,10 @@ h2 {
 }
 
 .block {
+  padding-bottom: 110px;
+  width: 322px;
+  height: 168px;
+  text-align: left;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -337,6 +358,9 @@ h2 {
   line-height: 28px;
   color: var(--primary-bg-color);
   background: rgba(33, 150, 243, 0.9);
+}
+/* footer */
+.page-footer {
 }
 
 .mail {
