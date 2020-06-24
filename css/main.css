@@ -352,6 +352,12 @@ h2 {
   align-items: center;
   height: 252px;
 }
+.address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--primary-white-color);
+}
 .address-item {
   display: flex;
   flex-direction: column;
