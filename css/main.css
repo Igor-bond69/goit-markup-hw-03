@@ -90,7 +90,7 @@ body {
 
 /* end of menu*/
 
-a.logo {
+.logo {
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.19;
@@ -353,10 +353,12 @@ h2 {
   height: 252px;
 }
 .address {
+  display: flex;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   color: var(--primary-white-color);
+  flex-direction: column;
 }
 .address-item {
   display: flex;
@@ -367,11 +369,12 @@ h2 {
   /* flex-direction: column; */
   min-width: 207px;
   margin-right: 102px;
+  margin-left: 69px;
 }
 .social-list {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 0;
   margin: 0;
 }
@@ -382,6 +385,7 @@ h2 {
 
 .mail {
   color: var(--accent-color);
+  padding-bottom: 9px;
 }
 
 .mail:hover {
@@ -415,4 +419,6 @@ h2 {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
+  padding-bottom: 9px;
+  margin: 0;
 }
