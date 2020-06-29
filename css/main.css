@@ -259,14 +259,35 @@ img {
 }
 
 /* works */
+.bottom-work {
+  width: 370px;
+  height: 70px;
+}
+
+.works-title {
+  color: var(--title-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
 
 .container-works {
   display: flex;
+  padding-left: 0;
+  margin: 0;
 }
 
 .works-li {
   width: 370px;
+
   margin-right: 30px;
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 .works-li:last-child {
@@ -279,6 +300,10 @@ img {
   visibility: hidden;
 }
 /* works portfolio */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .card-content {
   padding-left: 24px;
@@ -292,9 +317,7 @@ img {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-.card-img {
-  display: block;
-}
+
 .vector {
   display: block;
 }
@@ -314,6 +337,26 @@ img {
 .works-list {
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
+}
+
+.flex-element {
+  width: 370px;
+  margin-right: 30px;
+  padding-bottom: 30px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
+}
+
+.flex-element:nth-child(3n) {
+  margin-right: 0;
+}
+
+/* team */
+
+.team {
+  background-color: #f5f4fa;
 }
 
 .flex-elements {
@@ -324,16 +367,14 @@ img {
   border-top-right-radius: 5px;
   overflow: hidden;
 }
-
-.flex-elements :nth-child(3n) {
+.flex-elements:last-child {
   margin-right: 0;
 }
-
-/* team */
 
 .team-div {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 94px;
 }
 .team-title {
   padding-top: 30px;
@@ -356,7 +397,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--section-text-color);
 }
-.team-li {
+.team-list {
   display: flex;
   justify-content: space-between;
   width: 206px;
@@ -371,9 +412,20 @@ img {
   display: flex;
   justify-content: space-between;
 }
+
 .picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
   width: 170px;
+  height: 90px;
   margin-right: 30px;
+}
+
+.picture:last-child {
+  margin-right: 0;
 }
 
 /* button */
@@ -448,23 +500,6 @@ h2 {
 
 .text {
   color: var(--section-text-color);
-}
-
-.block {
-  padding-bottom: 63px;
-  padding-top: 63px;
-  padding-left: 24px;
-  padding-right: 24px;
-  width: 322px;
-  margin: 0;
-  text-align: left;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 1.55;
-  color: var(--primary-bg-color);
-  background: rgba(33, 150, 243, 0.9);
 }
 
 /* footer */
