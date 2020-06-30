@@ -296,6 +296,9 @@ img {
 
 /* page portfolio */
 
+.card-link {
+  display: block;
+}
 .visually-hidden {
   visibility: hidden;
 }
